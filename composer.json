@@ -1,0 +1,17 @@
+{
+    "name": "santanu-mondal/module2",
+    "autoload": {
+        "psr-4": {
+            "SantanuMondal\\Module2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "santanumondal9000",
+            "email": "santanu.mondal@innoraft.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

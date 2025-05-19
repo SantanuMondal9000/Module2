@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-area-block {
+  background-image: linear-gradient(to right, rgba(6, 146, 240, 0.562), rgb(9, 137, 241));
+  height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.todo-area {
+  width: 600px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.todo-area h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.todo-input-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.todo-input-area input {
+  width: 90%;
+  padding: 20px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.438);
+  font-size: 1.3rem;
+}
+
+.todo-add-btn {
+  width: 10%;
+  height: 100%;
+  font-size: 2rem;
+  background-color: rgb(26, 26, 255);
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.todo-list-area {
+  height: 50%;
+  overflow-y: auto;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  height: 50px;
+  /* padding: 12px; */
+}
+
+.todo-check {
+  width: 20px;
+  height: 20px;
+}
+
+.todo-body {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.todo-body .todo-edit {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.1rem;
+  display: none;
+
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.todo-action {
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-left: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+.todo-action button {
+  width: 45%;
+  height: 100%;
+}
+
+.todo-edit-btn,
+.todo-delete-btn {
+  background-image: url("../assets/edit-solid.svg");
+  background-color: transparent;
+  background-size: 78%;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-delete-btn {
+  background-image: url("../assets/trash-solid.svg");
+  border-left: 1px solid rgba(128, 128, 128, 0.377);
+}
